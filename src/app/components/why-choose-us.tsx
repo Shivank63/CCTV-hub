@@ -112,7 +112,7 @@ export default function WhyChooseUs() {
                   Trusted by <span className="text-blue-400">5,000+</span> Clients
                 </h3>
                 <p className="text-gray-300 mb-6">
-                  At Infotechistan, we pride ourselves on delivering exceptional security solutions that meet the unique
+                  At CCTV Hub, we pride ourselves on delivering exceptional security solutions that meet the unique
                   needs of each client. Our commitment to quality, innovation, and customer satisfaction has made us the
                   preferred choice for thousands of homes and businesses.
                 </p>

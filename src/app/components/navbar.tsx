@@ -54,7 +54,7 @@ export default function Navbar() {
           {/* Logo */}
           <button onClick={() => scrollToSection("hero")} className="flex items-center cursor-pointer">
             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-300 hover:to-purple-500 transition-all duration-300">
-              Infotechistan
+              CCTV Hub
             </span>
           </button>
 

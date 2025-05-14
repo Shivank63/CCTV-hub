@@ -217,8 +217,8 @@ export default function ContactForm() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-1">Email Address</h4>
-                <p className="text-gray-400">info@infotechistan.com</p>
-                <p className="text-gray-400">support@infotechistan.com</p>
+                <p className="text-gray-400">info@CCTV Hub.com</p>
+                <p className="text-gray-400">support@CCTV Hub.com</p>
               </div>
             </div>
           </div>

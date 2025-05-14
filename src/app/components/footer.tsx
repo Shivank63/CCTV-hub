@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-              Infotechistan
+              CCTV Hub
             </h3>
             <p className="text-gray-400 mb-6">
               Providing cutting-edge surveillance solutions for homes and businesses since 2010.
@@ -177,7 +177,7 @@ export default function Footer() {
                 <div className="mr-3 mt-1 w-8 h-8 rounded-full flex items-center justify-center bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/30">
                   <Mail className="h-4 w-4 text-blue-400" />
                 </div>
-                <span className="text-gray-400">info@infotechistan.com</span>
+                <span className="text-gray-400">info@CCTV Hub.com</span>
               </li>
             </ul>
           </div>
@@ -185,7 +185,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © {currentYear} Infotechistan. All rights reserved. | Designed with <span className="text-red-500">❤️</span>{" "}
+            © {currentYear} CCTV Hub. All rights reserved. | Designed with <span className="text-red-500">❤️</span>{" "}
             for security
           </p>
         </div>
