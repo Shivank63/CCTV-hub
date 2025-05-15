@@ -25,7 +25,6 @@ export default function HeroSection() {
       ref={scrollRef}
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Video Background Only */}
       <video
         autoPlay
         muted
@@ -37,7 +36,6 @@ export default function HeroSection() {
         <source src="/security-vedio-bg.mp4" type="video/mp4" />
       </video>
 
-      {/* Hero content */}
       <div className="container mx-auto px-4 z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -111,7 +109,6 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: [0, 10, 0] }}

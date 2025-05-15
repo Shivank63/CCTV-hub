@@ -37,7 +37,7 @@ export default function Navbar() {
       const offsetTop =
         element.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
-        top: offsetTop - 80, // Adjust for navbar height
+        top: offsetTop - 80,
         behavior: "smooth",
       });
     }
@@ -60,13 +60,12 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <button
             onClick={() => scrollToSection("hero")}
             className="flex items-center gap-2 cursor-pointer"
           >
             <img
-              src="/logo.png" // Replace with your actual image path
+              src="/logo.png" 
               alt="CCTV Hub Logo"
               className="h-8 w-8 object-contain"
             />
@@ -75,7 +74,6 @@ export default function Navbar() {
             </span>
           </button>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <button
@@ -96,7 +94,6 @@ export default function Navbar() {
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -108,7 +105,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}
