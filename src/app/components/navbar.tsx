@@ -1,45 +1,54 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { motion, useScroll, useTransform } from "framer-motion"
-import { Menu, X, Shield, Bell, Home, ChevronDown } from "lucide-react"
-import { Button } from "./ui/button"
+import { useState, useEffect } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Menu, X, Shield, Bell, Home, ChevronDown } from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const { scrollY } = useScroll()
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const { scrollY } = useScroll();
 
-  const backgroundColor = useTransform(scrollY, [0, 100], ["rgba(0, 0, 0, 0)", "rgba(17, 24, 39, 0.8)"])
-  const backdropBlur = useTransform(scrollY, [0, 100], ["blur(0px)", "blur(8px)"])
+  const backgroundColor = useTransform(
+    scrollY,
+    [0, 100],
+    ["rgba(0, 0, 0, 0)", "rgba(17, 24, 39, 0.8)"]
+  );
+  const backdropBlur = useTransform(
+    scrollY,
+    [0, 100],
+    ["blur(0px)", "blur(8px)"]
+  );
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
+      setIsScrolled(window.scrollY > 10);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (id: string) => {
-    setIsOpen(false)
-    const element = document.getElementById(id)
+    setIsOpen(false);
+    const element = document.getElementById(id);
     if (element) {
-      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset
+      const offsetTop =
+        element.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: offsetTop - 80, // Adjust for navbar height
         behavior: "smooth",
-      })
+      });
     }
-  }
+  };
 
   const navLinks = [
     { name: "Home", href: "hero", icon: Home },
     { name: "Services", href: "services", icon: Shield },
     { name: "About Us", href: "about", icon: Bell },
     { name: "Contact", href: "contact", icon: ChevronDown },
-  ]
+  ];
 
   return (
     <motion.header
@@ -52,7 +61,15 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <button onClick={() => scrollToSection("hero")} className="flex items-center cursor-pointer">
+          <button
+            onClick={() => scrollToSection("hero")}
+            className="flex items-center gap-2 cursor-pointer"
+          >
+            <img
+              src="/logo.png" // Replace with your actual image path
+              alt="CCTV Hub Logo"
+              className="h-8 w-8 object-contain"
+            />
             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-300 hover:to-purple-500 transition-all duration-300">
               CCTV Hub
             </span>
@@ -81,7 +98,10 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-white">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-300 hover:text-white"
+            >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -120,5 +140,5 @@ export default function Navbar() {
         </motion.div>
       )}
     </motion.header>
-  )
+  );
 }

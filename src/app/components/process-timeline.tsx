@@ -85,7 +85,7 @@ export default function ProcessTimeline() {
 
                 <div className="absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform -translate-x-8 hidden lg:block"></div>
 
-                <div className="absolute top-8 right-1/2 text-3xl font-bold text-gray-700 transform translate-y-24 hidden lg:block">
+                <div className="absolute top-2 right-1/2 text-3xl font-bold text-gray-700 transform translate-y-24 hidden lg:block">
                   {index + 1}
                 </div>
 

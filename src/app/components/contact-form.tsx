@@ -86,7 +86,7 @@ export default function ContactForm() {
                   name="name"
                   value={formState.name}
                   onChange={handleChange}
-                  placeholder="John Doe"
+                  placeholder="Shivank Verma"
                   required
                   className="bg-gray-800/50 border-gray-700 focus:border-blue-500 text-white hover:border-blue-500/50 transition-all duration-300 focus:shadow-[0_0_0_1px_rgba(96,165,250,0.5)]"
                 />
@@ -102,7 +102,7 @@ export default function ContactForm() {
                   type="email"
                   value={formState.email}
                   onChange={handleChange}
-                  placeholder="john@example.com"
+                  placeholder="shivank@example.com"
                   required
                   className="bg-gray-800/50 border-gray-700 focus:border-blue-500 text-white hover:border-blue-500/50 transition-all duration-300 focus:shadow-[0_0_0_1px_rgba(96,165,250,0.5)]"
                 />
@@ -117,7 +117,7 @@ export default function ContactForm() {
                   name="phone"
                   value={formState.phone}
                   onChange={handleChange}
-                  placeholder="+1 (555) 123-4567"
+                  placeholder="+91 6785985226"
                   className="bg-gray-800/50 border-gray-700 focus:border-blue-500 text-white hover:border-blue-500/50 transition-all duration-300 focus:shadow-[0_0_0_1px_rgba(96,165,250,0.5)]"
                 />
               </div>
@@ -206,8 +206,8 @@ export default function ContactForm() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-1">Phone Number</h4>
-                <p className="text-gray-400">+1 (555) 987-6543</p>
-                <p className="text-gray-400">+1 (555) 123-4567</p>
+                <p className="text-gray-400">+91 8352904156</p>
+                <p className="text-gray-400">+91 9754830021</p>
               </div>
             </div>
 
@@ -217,8 +217,8 @@ export default function ContactForm() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-1">Email Address</h4>
-                <p className="text-gray-400">info@CCTV Hub.com</p>
-                <p className="text-gray-400">support@CCTV Hub.com</p>
+                <p className="text-gray-400">info@cctv.hub.com</p>
+                <p className="text-gray-400">support@cctv.hub.com</p>
               </div>
             </div>
           </div>
@@ -241,7 +241,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className="mt-10 relative z-10">
+          {/* <div className="mt-10 relative z-10">
             <h4 className="text-lg font-semibold text-white mb-4">Follow Us</h4>
             <div className="flex gap-4">
               <a
@@ -289,7 +289,7 @@ export default function ContactForm() {
                 </svg>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </div>

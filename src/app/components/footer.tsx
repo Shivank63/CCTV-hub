@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/"
                 className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-blue-600 transition-colors duration-300 border border-gray-700 hover:border-blue-500 hover:shadow-[0_0_10px_rgba(96,165,250,0.5)]"
               >
                 <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -40,7 +40,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://x.com/__x"
                 className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-blue-400 transition-colors duration-300 border border-gray-700 hover:border-blue-500 hover:shadow-[0_0_10px_rgba(96,165,250,0.5)]"
               >
                 <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -48,7 +48,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/"
                 className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-purple-600 transition-colors duration-300 border border-gray-700 hover:border-purple-500 hover:shadow-[0_0_10px_rgba(168,85,247,0.5)]"
               >
                 <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -60,7 +60,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/"
                 className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-red-600 transition-colors duration-300 border border-gray-700 hover:border-red-500 hover:shadow-[0_0_10px_rgba(239,68,68,0.5)]"
               >
                 <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -171,13 +171,13 @@ export default function Footer() {
                 <div className="mr-3 mt-1 w-8 h-8 rounded-full flex items-center justify-center bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/30">
                   <Phone className="h-4 w-4 text-blue-400" />
                 </div>
-                <span className="text-gray-400">+1 (555) 987-6543</span>
+                <span className="text-gray-400">+91  8654752895</span>
               </li>
               <li className="flex items-start">
                 <div className="mr-3 mt-1 w-8 h-8 rounded-full flex items-center justify-center bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/30">
                   <Mail className="h-4 w-4 text-blue-400" />
                 </div>
-                <span className="text-gray-400">info@CCTV Hub.com</span>
+                <span className="text-gray-400">info@cctv.hub.com</span>
               </li>
             </ul>
           </div>
