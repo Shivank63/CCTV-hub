@@ -38,7 +38,7 @@ A modern, responsive website for a CCTV camera provider company built with Next.
 
 1. Clone the repository:
    \`\`\`bash
-   git clone https://github.com/yourusername/infotechistan.git
+   git clone https://github.com/Shivank63/CCTV-hub.git
    cd CCTV-hub
    \`\`\`
 
@@ -176,7 +176,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/infotechistan/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Shivank63/CCTV-hub/issues).
 
 ## 📧 Contact
 
